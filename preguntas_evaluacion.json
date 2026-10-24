@@ -1,0 +1,44 @@
+[
+  {
+    "id": "P1",
+    "pregunta": "¿Cómo puedo manejar una conversión numérica inválida y lanzar un error con un mensaje claro?",
+    "documentos_relevantes": [
+      "03_excepciones"
+    ],
+    "respuesta_esperada": "Capturar ValueError con try y except, y lanzar una excepción con raise y un mensaje claro."
+  },
+  {
+    "id": "P2",
+    "pregunta": "¿Cómo devuelve una función un objeto y cómo puedo llamar después a un método de ese objeto?",
+    "documentos_relevantes": [
+      "02_funciones",
+      "05_clases_objetos"
+    ],
+    "respuesta_esperada": "return entrega el objeto al llamador. La variable que lo recibe permite acceder a sus atributos y llamar a sus métodos."
+  },
+  {
+    "id": "P3",
+    "pregunta": "¿Cómo ejecuto varias consultas concurrentemente y limito a dos las que acceden al recurso al mismo tiempo?",
+    "documentos_relevantes": [
+      "07_asyncio_tareas",
+      "08_asyncio_semaforos"
+    ],
+    "respuesta_esperada": "Combinar asyncio.gather con un asyncio.Semaphore(2) compartido y utilizar async with para proteger el acceso al recurso."
+  },
+  {
+    "id": "P4",
+    "pregunta": "¿Cómo leo un archivo de texto en UTF-8 y garantizo que se cierre aunque ocurra una excepción?",
+    "documentos_relevantes": [
+      "04_archivos"
+    ],
+    "respuesta_esperada": "Abrir el archivo con encoding='utf-8' dentro de una sentencia with."
+  },
+  {
+    "id": "P5",
+    "pregunta": "¿Cómo evito que una prueba se ejecute al importar un módulo y permito ejecutarla al lanzar el archivo directamente?",
+    "documentos_relevantes": [
+      "06_modulos"
+    ],
+    "respuesta_esperada": "Colocar la prueba dentro del bloque if __name__ == '__main__'."
+  }
+]
